@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="#F3F6FA">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="22dp" android:gravity="center_horizontal">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Служба определения местоположения" android:textColor="#16324F"
+            android:textSize="24sp" android:textStyle="bold" android:gravity="center"
+            android:layout_marginTop="16dp" android:layout_marginBottom="22dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Определение текущих координат пользователя" android:textSize="16sp"
+            android:textColor="#44546A" android:gravity="center" android:layout_marginBottom="18dp" />
+        <Button android:id="@+id/btnLocate" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Определить местоположение"
+            android:textAllCaps="false" android:minHeight="52dp" />
+        <TextView android:id="@+id/txtStatus" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Нажмите кнопку, чтобы получить координаты."
+            android:textSize="15sp" android:textColor="#44546A" android:layout_marginTop="20dp" />
+        <TextView android:id="@+id/txtCoordinates" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Широта: —\nДолгота: —"
+            android:textSize="18sp" android:textColor="#16324F" android:padding="16dp"
+            android:background="#FFFFFF" android:layout_marginTop="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Расстояние до дома и время пути" android:textSize="18sp"
+            android:textStyle="bold" android:textColor="#16324F" android:layout_marginTop="24dp" />
+        <TextView android:id="@+id/txtDistance" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Расстояние: —\nВремя пешком (6 км/ч): —\nАдрес: —"
+            android:textSize="16sp" android:textColor="#44546A" android:padding="16dp"
+            android:background="#FFFFFF" android:layout_marginTop="10dp" />
+    </LinearLayout>
+</ScrollView>
